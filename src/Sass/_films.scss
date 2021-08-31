@@ -1,0 +1,66 @@
+.movie-preview {
+  display: flex;
+  flex-direction: column;
+  .movie-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+    }
+    .movie-title {
+      color: $grey;
+      margin: 8px 16px;
+      font-size: 2rem;
+      font-weight: 900;
+      @media screen and (max-width: 700px) {
+        font-size: 1.5rem;
+      }
+    }
+    .movie-episode {
+      position: relative;
+      color: $black;
+      width: 100px;
+      height: 100px;
+      margin: 8px 16px;
+      padding: 8px;
+      background-color: $grey;
+      @media screen and (max-width: 700px) {
+        width: 50px;
+        height: 50px;
+      }
+      .text {
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+        @media screen and (max-width: 700px) {
+          padding-top: -5px;
+        }
+        @media screen and (max-width: 400px) {
+        }
+      }
+      .episode-number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        font-weight: 900;
+        @media screen and (max-width: 700px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .movie-release_date {
+    color: $grey;
+    margin: 8px 16px;
+  }
+  .movie-actors {
+    margin: 8px 16px;
+    display: block;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

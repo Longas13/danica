@@ -1,0 +1,24 @@
+.movie-actors-list {
+  margin: 16px;
+  overflow-x: auto;
+  table {
+    border: 1px solid $orange;
+    padding: 8px;
+    margin: 16px auto;
+    width: 70%;
+    @media screen and (max-width: 700px) {
+        width: 100%;
+    }
+    tr {
+      th,
+      td {
+        text-align: center;
+      }
+      .in-movie {
+        color: $red;
+        padding: 1em 2em;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

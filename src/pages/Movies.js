@@ -1,7 +1,9 @@
+import Filmlist from "../Components/Filmlist"
+
 const Movies = () => {
   return (
     <div>
-      <h2>Movies</h2>
+      <Filmlist />
     </div>
   );
 };

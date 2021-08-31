@@ -1,15 +1,83 @@
 //Colors
-$black: #000;
+$black: #17161b;
 $grey: #ddd;
+$orange: orange;
+$red: #e15021;
 
 body {
   background-color: $black;
   color: $grey;
   max-width: 1400px;
   margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.center {
+  text-align: center;
 }
